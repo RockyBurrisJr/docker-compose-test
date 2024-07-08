@@ -1,18 +1,18 @@
 version: "4"
-name: ipfs_ollama
+name: ipfs-ollama-anythingllm
 services:
-  pfsollama:
+  ipfs-ollama:
     image: rockyburrisjr/myollama:latest
     pull_policy: always
-    container_name: pfsollama
+    container_name: ipfs-ollama
     ports:
       - 11434:11434
     restart: on-failure
 
-  ipfsllm:
+  ipfs-anythingllm:
     image: rockyburrisjr/ipfs-llm:latest
     pull_policy: always
-    container_name: ipfsllm
+    container_name: ipfs-anythingllm
     ports:
       - 3001:3001
     restart: on-failure
